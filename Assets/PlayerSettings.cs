@@ -33,7 +33,7 @@ public class PlayerSettings : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.GetComponent<fireball>() != null)
+        if(collision.gameObject.GetComponent<SpawnFireball>() != null)
             Damage(collision.gameObject.transform.position);
     }
 }
