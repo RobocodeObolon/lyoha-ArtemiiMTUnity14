@@ -3334,6 +3334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7444495566448187516, guid: 805b1e68ed8c513459b0634c5cd47dec, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7444495566448187517, guid: 805b1e68ed8c513459b0634c5cd47dec, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -3377,6 +3381,10 @@ PrefabInstance:
     - target: {fileID: 7444495566448187517, guid: 805b1e68ed8c513459b0634c5cd47dec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444495566448187519, guid: 805b1e68ed8c513459b0634c5cd47dec, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805b1e68ed8c513459b0634c5cd47dec, type: 3}
@@ -3477,6 +3485,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d9e21ef2ebfcdc44a49c0f7ad5651b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
+  healthImage:
+  - {fileID: 21300000, guid: 60af6aaf9cfee5146abfa9bdf794904c, type: 3}
+  - {fileID: 21300000, guid: 2bda6fd1595489c4ebf46a1facb296c3, type: 3}
+  - {fileID: 21300000, guid: e4cad1cc0665a694099e34d71c0cd590, type: 3}
+  - {fileID: 21300000, guid: dbcc6803da9b37d4487729d2119d1578, type: 3}
+  healthBar: {fileID: 725752106}
 --- !u!1 &1488228877
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCoinCollector : MonoBehaviour
 {
@@ -15,6 +16,18 @@ public class PlayerCoinCollector : MonoBehaviour
 
             Destroy(collision.gameObject);
             Debug.Log("Coins collected:" + coinCount);
+
+        }if (collision.CompareTag("fireball"))
+        {
+            hp--;
+
+
+
+            Destroy(collision.gameObject);
+            if(hp <= 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+            }
 
         }
     }
