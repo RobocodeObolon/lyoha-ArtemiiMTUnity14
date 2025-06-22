@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    // Start is called before the first frame update
-    
-    
-
-    
     private Vector3 startingPosition;
     public Transform followTarget;
     private Vector3 targetPos;
@@ -23,7 +18,7 @@ public class CameraFollow : MonoBehaviour
     {
         if (followTarget != null)
         {
-            targetPos = new Vector3(followTarget.position.x, followTarget.position.z);
+            targetPos = new Vector3(followTarget.position.x, followTarget.position.y);
             Vector3 velocity = (targetPos - transform.position) * moveSpeed;
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, 1f, Time.deltaTime);
         }
