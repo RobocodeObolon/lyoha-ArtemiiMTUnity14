@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerCoinCollector : MonoBehaviour
 {
     private int coinCount = 0;
+    public int hp = 3;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Coin"))
