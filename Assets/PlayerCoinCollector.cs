@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class PlayerCoinCollector : MonoBehaviour
 {
     private int coinCount = 0;
-    public int hp = 3;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Coin"))
@@ -20,12 +19,12 @@ public class PlayerCoinCollector : MonoBehaviour
 
         }if (collision.CompareTag("fireball"))
         {
-            hp--;
+            GetComponent<PlayerSettings>().health--;
 
 
 
             Destroy(collision.gameObject);
-            if(hp <= 0)
+            if(GetComponent<PlayerSettings>().health <= 0)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
             }

@@ -18,7 +18,7 @@ public class PlayerSettings : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        healthBar.sprite = healthImage[health];
     }
     public void Damage(Vector3 enemyPosition)
     {
